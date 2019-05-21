@@ -46,7 +46,7 @@ var vuePhotoPreview ={
 
 					
 					var thumbElements;
-					var group = eTarget.getAttribute('preview')
+					var group = eTarget.getAttribute('preview') || eTarget.getAttribute('group')
 					if(group) {
 						thumbElements = document.querySelectorAll('img[preview="' + group + '"]')
 					} else {
